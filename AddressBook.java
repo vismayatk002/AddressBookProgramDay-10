@@ -1,4 +1,4 @@
-public class AddressBook extends Contact{
+public class AddressBook extends ContactDetails{
 
     String address, city, state;
     int zip;
