@@ -2,21 +2,37 @@ import java.util.Scanner;
 
 public class OperateContact{
 
-    public void editContact(AddressBook contact){
+    // public void editContact(AddressBook contact){
 
-        String address;
+    //     String address;
+    //     Scanner sc= new Scanner(System.in);
+    //     System.out.print("\nEnter the First name for update Address : ");
+    //     String editName = sc.nextLine();
+    //     if(editName.equals(contact.getFirstName())){
+    //         System.out.print("\nEnter your new Address : ");
+    //         address = sc.nextLine();
+    //         contact.setAddress(address);
+    //     }
+    //     else{
+    //         System.out.print("\ncouldn't find the contact..");
+    //     }
+    //     sc.close();
+    // }
+    public AddressBook deleteContact(AddressBook contact){
+
         Scanner sc= new Scanner(System.in);
-        System.out.print("\nEnter the First name for update Address : ");
-        String editName = sc.nextLine();
-        if(editName.equals(contact.getFirstName())){
-            System.out.print("\nEnter your new Address : ");
-            address = sc.nextLine();
-            contact.setAddress(address);
+        System.out.print("\nEnter the First name for delete : ");
+        String deleteName = sc.nextLine();
+        if(deleteName.equals(contact.getFirstName())){
+            AddressBook detail = new AddressBook();
+            System.out.print("\nYour contact deleted..");
+            return detail;
         }
         else{
             System.out.print("\ncouldn't find the contact..");
         }
         sc.close();
+        return contact;        
     }
     public void showContact(AddressBook contact){
 
