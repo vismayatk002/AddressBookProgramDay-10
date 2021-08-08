@@ -44,12 +44,12 @@ public class AddressBookMain{
         contact.setZip(zip);
 
         OperateContact operate = new OperateContact();
-        // operate.showContact(contact);
-        // System.out.print("\nDo you want to edit? press Y / N : ");
-        // char editOption = sc.next().charAt(0);
-        // if(editOption == 'Y'){
-        //     operate.editContact(contact);
-        // }
+        operate.showContact(contact);
+        System.out.print("\nDo you want to edit? press Y / N : ");
+        char editOption = sc.next().charAt(0);
+        if(editOption == 'Y'){
+            operate.editContact(contact);
+        }
         operate.showContact(contact);
         System.out.print("\nDo you want to delete? press Y / N : ");
         char deleteOption = sc.next().charAt(0);
