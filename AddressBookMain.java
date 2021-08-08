@@ -16,7 +16,7 @@ public class AddressBookMain{
 
         System.out.print("\nEnter Last Name  : ");  
         lastName = sc.nextLine();
-        contact.setFirstName(lastName);
+        contact.setLastName(lastName);
 
         System.out.print("\nEnter E-mail  : ");
         email = sc.nextLine();
