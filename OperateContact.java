@@ -29,7 +29,6 @@ public class OperateContact{
         else{
             System.out.print("\nYour contact updated.");
         }
-        //sc.close();
     }
     public void deleteContact(){
 
